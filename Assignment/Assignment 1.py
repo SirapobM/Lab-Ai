@@ -39,7 +39,7 @@ while True:
     print("Press exit to end program")
     if name.lower() == "exit":
         break
-    else:
+    try:
         unit = int(input("Enter your unit : "))
         payment = calculate_electricity_cost(unit)
         print(f"Unit {name}: {payment:.2f} Baht")
